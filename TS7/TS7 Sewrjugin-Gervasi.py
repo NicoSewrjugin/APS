@@ -42,7 +42,7 @@ def plot_freq_response(num, den):
     axs[1].set_xticklabels([r'$0$', r'$\frac{\pi}{2}$', r'$\pi$'])
 
     # Respuesta en fase
-    axs[2].plot(w, np.angle(h), 'r')
+    axs[2].plot(w, np.unwrap(np.angle(h)), 'r')
     axs[2].set_title("Respuesta en fase")
     axs[2].set_xlabel(r'Frecuencia $\omega$ [rad/muestra]')
     axs[2].set_ylabel(r'$\angle H(e^{j\omega})$ [rad]')
