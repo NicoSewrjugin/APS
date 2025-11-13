@@ -1,0 +1,25 @@
+Informe:
+    Edición: 
+        * Revisar Jupyter Notebook con un corrector porque hay algunos errores menores de uso de 
+          tildes y comas. 
+    Conclusión: 
+        * Falta aunque sea un análisis mínimo en la estimación del ancho de banda y cómo afectan
+          la varianza, la resolución espectral y el leakage de los espectros estimados con los distintos
+          métodos.
+
+Código:
+    * Código corre sin problemas.
+
+Desarrollo:
+    * Dividir el Jupyter Notebook en secciones. La idea de presentar un trabajo en Jupyter Notebook, es 
+      explicar código y salidas. Al menos separar el código explicando por separado los espectros de 
+      cada señal.
+    * Los gráficos de las señales están en radianes, por qué? Arreglar eso.
+    * No está justificado el uso de un único método de estimación espectral para todas las señales. 
+    * Falta considerar en el análisis aspectos de la estimación espectral como resolución y leakage.
+    * Falta justificar el uso de la ventana de Hanning.
+    
+Sugerencias:
+    * Por lo menos en una señal, probar los tres métodos de estimación espectral, ajustando los 
+      parámetros disponibles para tener la mejor estimación del espectro, no sólo considerando la varianza
+      si no también la resolución y el leakage.
